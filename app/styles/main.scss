@@ -1,0 +1,248 @@
+/*main elements*/
+body {background: #fafafa;}
+h1,h2,h3,h4,h5 {font-family:'Open Sans Condensed', Helvetica, sans-serif; font-weight: normal; color: #333;}
+p {color: #333}
+header {background: fixed no-repeat left top; background-size:cover; padding: 20px 0 40px;}
+footer {font-size: .8em; padding: 30px 0px 30px; color: #b2b5b9; background-image: url('../img/patterns/escheresque_ste/escheresque_ste.png');}
+footer h3 {color: #abafb2}
+footer li {list-style-type: none;}
+
+/*sets width for all row elements (built into foundation)*/
+.row {width: 1100px;}
+
+/*nav bar*/
+@media only screen and (max-width: 52em){
+  .header_nav {display: none;}
+}
+@media only screen and (max-width: 69em){
+  #flagset {display: none;}
+  .section_light_about {display: none;}
+}
+@media only screen and (min-width: 52em){
+  #menu {display: none;}
+  #title {display: none;}
+  .contact-info-mobile {display: none;}
+  .section_about_mobile {display: none;}
+  .cmb {display: none;}
+}
+@media only screen and (min-width: 40em){
+  .fsm {display: none;}
+}
+.header_nav {background: #fafafa; box-shadow: 0 1px 6px rgba(34, 25, 25, 0.6); z-index: 999;}
+
+.nav-bar {margin-top: 0; background: none;}
+.nav-bar > li {margin: 25px 0 25px; border: 0; padding: 0; font-family: 'Open Sans Condensed', Helvetica, sans-serif; letter-spacing: 1px; box-shadow: none}
+.nav-bar > li > a:first-child {font-size: 16px; text-transform: uppercase; padding: 0 25px}
+.nav-bar > li:last-child {border: 0; box-shadow: none}
+.nav-bar > li.active:hover {background: #000; cursor: default;}
+.nav-bar > li:hover { background: #eeeeee; color: #000;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+.nav-bar > li > a {color: #4d4d4d}
+.nav-bar > li > a:hover {color: #000;}
+.active a {background:#F06B48; color: #FFF}
+
+/*nav bar flags*/
+#menu-header img {width: 40px; height: 40px; opacity: 0.4;}
+#menu-header img:hover {opacity: 1;
+    -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+}
+#flagset {float: right;}
+
+/*mobile nav bar*/
+#title {top:-6px; left:15px; position:absolute;}
+.slicknav_menu {
+  display:none;
+}
+
+@media screen and (max-width: 52em) {
+  .js #menu {
+    display:none;
+  }
+  .js .slicknav_menu {
+    display:block;
+  }
+}
+
+/*email list signup in footer*/
+#mce-EMAIL {width: 165px;}
+#submit-button {width:165px; height: 34px; margin-right:5px; margin-left:5px; font-size: 20px; padding: 5px}
+
+/*index page*/
+.section_home {background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+.section_home h1 {font-size:6em; text-align: center; padding: 20px 0 10px;}
+.section_home .panel {height: 275px;}
+.section_home > div {padding: 25px}
+
+/*about page*/
+.section_light_about {background: #FFF; border-top: 2px solid #eeeeee; padding: 20px 0; clear:both}
+.section_about {padding: 30px 0 45px; background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+.section_about h1 {font-size:6em; text-align: center; padding: 10px 0 30px;}
+.section_about h2 {text-align: center;}
+.about-cards img {height: 48px; width: 48px;}
+.about-cards h3 {font-size: 36px; padding: 0 0 0; margin: 0 0 0;}
+.about-cards .panel {height: 200px;}
+.about-cards .panel .row {margin-bottom: 20px;}
+
+/*board page*/
+.section_board {padding: 50px 0; background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+.section_board h1 {font-size:6em; padding-bottom: 60px; text-align: center;}
+#offboard {padding: 25px 0 60px}
+.singlesclub .left {border-right: 0px;}
+.singlesclub .center {border-left: 0px; border-right: 0px;}
+.singlesclub .right {border-left: 0px;}
+.section_board .panel {height: 490px;}
+#exec_pres .panel {height: 533px;}
+
+/*events page*/
+.section_events {padding: 75px 0 0; background-image: url('../img/patterns/escheresque_ste/escheresque_ste.png');}
+.section_events .row {padding-bottom:50px}
+.section_events .panel {background-color: #F06B48; border:0px; height: 300px;}
+.section_events h1 {color:#ffffff; padding: 25px; font-size: 6em;}
+.section_events h3 {color:#ffffff; padding: 5px;}
+.shadow {
+ -moz-box-shadow:    inset 0 0 10px #000000;
+ -webkit-box-shadow: inset 0 0 10px #000000;
+ box-shadow:         inset 0 0 10px #000000;
+}
+.shadow2{box-shadow: 0 0px 0px #262626;}
+.section_annual_events {background-image: url('../img/patterns/agsquare/agsquare_@2X.png'); padding: 20px 0; clear:both}
+.section_annual_events h1 {text-align: center; padding-bottom: 30px; margin: 0 0 20px 0}
+#annual-events {padding: 20px 0;}
+#annual-events h1 {font-size: 6em; text-align:center;}
+#annual-events h3 {font-size: 50px;}
+#annual-events p {font-size: 17px;}
+#annual-events .panel {height:408px;}
+
+/*fashion show page*/
+.section_fs {padding: 50px 0 100px; background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+.section_fs h1 {font-size:6em; text-align: center; padding-bottom: 25px;}
+.section_fs h2 {text-align:center; padding: 0 0px 20px;}
+.section_fs h3 {text-align:center; padding: 0 5px 30px};
+
+/*not working properly, deal with it after we get everyone's pic*/
+/*.fs img {height: 300px; width: 300px;} */
+
+/*contact page*/
+.swag {padding-left: 50px;}
+.contact-info .row {padding-top: 25px;}
+.contact-info img {height: 100px; width: 100px;}
+.section_contact {padding: 110px 0; background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+#contactyt {width:450px; height: 325px; padding-top:30px;}
+#contactmap {width: 450px; height: 450px; padding-top:20px;}
+#cmaps {margin-top:50px;}
+#cmaps img:hover {opacity: .5;
+    -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+
+/*easter egg page*/
+.section_ee {padding: 100px 0 30px; background-image: url('../img/patterns/agsquare/agsquare_@2X.png');}
+.section_ee h1 {font-size:6em; text-align: center;}
+.section_ee {text-align: center;}
+
+/*other*/
+.button {background-color: #F06B48; border: 0px; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-weight: 300; font-size: 25px; height: 50px;}
+.button:hover {background-color: #C0563A;}
+
+/*modal*/
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+#modal {
+  position: fixed;
+  width: 600px;
+  padding: 30px;
+  display:none;
+  background: #FFF;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+#modal h2 {padding-bottom: 10px;}
+#modal p {font-family: 'Open Sans Condensed'; font-size: 1.5em; color: #666; text-shadow: none;}
+.filler {display: none;}
+
+/*mobile*/
+@media only screen and (max-width: 40em){
+  /*panels*/
+  .about-cards .panel {height: auto;}
+  .section_board .panel {height: auto;}
+  #exec_pres .panel {height: auto;}
+  #annual-events .panel {height: auto;}
+  .singlesclub .left {display: none;}
+  .singlesclub .right {display: none;}
+
+  .section_home {padding: 10px;}
+  .section_home h1 {font-size: 4em; padding: 0 0 15px;}
+  .section_home h2 {padding: 10px 0px; font-size: 2em;}
+  .section_home > div {padding: 0px}
+  .section_home .panel {height: auto;}
+
+  .section_about {padding: 10px;}
+  .section_about h1 {font-size: 4em; padding: 0;}
+  .section_about h2 {padding: 0 0 20px; font-size: 2em;}
+  .about-card-single {padding-left: 15px}
+  .about-card-single img, .about-card-single h3 {display: inline-block;}
+  .about-card-single h3 {padding: 0 0 0px 40px; vertical-align: 10px;}
+
+  .section_board {padding: 0;}
+  .section_board h1 {font-size:4em; padding: 25px 0 30px; text-align: center; margin: 0}
+  #offboard {padding: 0 0 20px;}
+
+  .section_events {padding: 20px 0 0;}
+  .section_events .row {padding-bottom:10px}
+  .section_events h1 {font-size: 4em; padding: 0 0 20px 0;}
+  .section_events h3 {padding: 0}
+  .section_events .panel {height: auto;}
+  #annual-events {padding: 0}
+  #annual-events h1 {font-size: 4em; padding: 0 0 10px;}
+  #annual-events h3 {font-size: 2.5em}
+
+  .fsd {display: none;}
+  .section_fs {padding: 10px;}
+  .section_fs .panel {height: auto;}
+  .section_fs h1 {font-size: 4em; padding: 0;}
+  .section_fs h2 {font-size: 1.75em}
+  .section_fs h3 {font-size: 1.5em}
+  .section_fs h4 {font-size: 1.5em}
+
+  .section_contact {padding: 0 0 20px; border-top: solid 2px #eeeeee;}
+  .contact-info {display: none;}
+  .contact-info-mobile {padding: 5px 0 5px 20px;}
+  .contact-info-mobile img {width: 48px; height: 48px;}
+  .cims img, .cims h3 {display: inline-block;}
+  .cims h3 {padding: 0 0 0px 20px; vertical-align: text-bottom;}
+  #rso {vertical-align: -15px;}
+  #contactyt {width: auto; height: auto; padding-top:5px;}
+  #contactmap {width: auto; height: auto; padding-top:5px;}
+  #cmaps {margin-top: 5px;}
+  #contactus {font-size: 4em; text-align: center;}
+  .cmb {padding-bottom: 20px; height: 10px; border-bottom: solid 2px #aaaaaa;}
+
+  .section_ee {padding: 8px}
+  #congrats h1 {font-size: 4em;}
+
+  #mce-EMAIL {width: 250px;}
+  #submit-button {width:250px;}
+  header {background: no-repeat center; background-size: cover; padding: 20px 0 40px;}
+  footer > div {padding: 0 10px;}
+  footer {font-size: .8em; padding: 10px 0px 10px; color: #b2b5b9; background-image: url('../img/patterns/escheresque_ste/escheresque_ste.png');}
+}

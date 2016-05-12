@@ -1,0 +1,54 @@
+<div style="height:100px"></div>
+
+<form>
+  <div class="row">
+    <div class="columns six">
+      <h1>Edit Event</h1>
+      <div>
+        <label>Name
+          <input type="text" placeholder="Event Name" ng-model="editevent.formData.name"/>
+        </label>
+      </div>
+      <div>
+        <label>Link
+          <input type="text" placeholder="Event Page" ng-model="editevent.formData.link"/>
+        </label>
+      </div>
+        <label>Date
+          <input type="text" id="datepicker" value="Choose A Date">
+        </label>
+      <div>
+        <label>Form (Optional)
+          <input type="text" placeholder="Link To Form" ng-model="editevent.formData.form"/>
+        </label>
+      </div>
+      <div class="row" style="margin-top:25px;margin-bottom:25px">
+        <div class="columns twelve">
+          <button class="button" id="upfile1" type="button">Upload Image</button>
+          <input id="fileUpload" type="file" name="fileUpload" onchange="angular.element(this).scope().fileNameChanged(this)" style="display:none;">
+        </div>
+      </div>
+    </div>
+    <div class="six columns">
+      <div class="row">
+        <div class="columns eight">
+          <h1>Preview Event</h1>
+        </div>
+        <div class="columns four" style="margin-top:10px">
+        </div>
+      </div>
+      <div class="panel">
+        <h3>{{ (editevent.displayDate) ? editevent.displayDate : 'Insert Event Date' }} - {{ (editevent.formData.name) ? editevent.formData.name : 'Insert Event Name' }} <span ng-class="editevent.hasForm(editevent.formData) ? '' : 'hide' ">
+           - <a href="{{editevent.formData.form}}">Sign Up!</a>
+        </span></h3>
+        <a href="{{editevent.formData.link}}">
+          <img ng-src="{{editevent.formData.image}}">
+        </a>
+      </div>
+      <div class="row">
+        <div class="columns twelve">
+          <button class="button" ng-click="editevent.editEvent(editevent.formData)">Submit Changes</button>
+        </div>
+      </div>
+    </div>
+</form>

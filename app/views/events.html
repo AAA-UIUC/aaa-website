@@ -1,0 +1,175 @@
+<section class="section_events">
+
+  <h1 style="text-align:center">Upcoming Events</h1>
+
+  <div class="row">
+    <div ng-repeat="event in events.events | orderBy:'date'" ng-if="event.upcoming">
+      <div class="six columns">
+        <div class="panel">
+          <h3>{{ event.displayDate }} - {{ event.name }}
+            <span ng-class="events.hasForm(event) ? '' : 'hide' ">
+             - <a href="{{event.form}}">Sign Up!</a>
+           </span>
+         </h3>
+         <a href="{{event.link}}">
+          <img ng-src="{{event.image}}">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ######################## Past Events ######################## -->
+
+<div id="past">
+  <h1 style="text-align:center; padding:0; margin:0">Past Events</h1>
+  <h1 id="expandcollapse" style="text-align:center; font-size:2em; padding:0 0 auto 0; margin:0"></h1>
+</div>
+
+<div class="pastevents">
+
+  <div class="row">
+    <div ng-repeat="event in events.events | orderBy:'-date'" ng-if="!event.upcoming">
+      <div class="six columns">
+        <div class="panel">
+          <h3>{{ event.displayDate }} - {{ event.name }}</h3>
+          <a href="{{event.link}}">
+            <img ng-src="{{event.image}}">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ######################## Section ######################## -->
+
+<section class="section_annual_events">
+
+  <div class="row" id="annual-events">
+
+    <h1>Annual Events</h1>
+
+    <div class="eight columns panel">
+      <img src="img/annual/asiantation.jpg">
+    </div>
+
+    <div class="four columns panel">
+      <h3>Asiantation</h3>
+      <p>An event organized by Asian Pacific American Coalition (APAC) that offers new incoming students an opportunities to get involved in Asian Culture.</p>
+    </div>
+
+
+    <div class="four columns panel">
+      <h3>Capture The Flag</h3>
+      <p>Capture the Flag is a tournament hosted by the various APAC organizations to compete in a vigorous sports competition to strengthen bonds and invigorate team and organization spirit.</p>
+    </div>
+
+    <div class="eight columns panel">
+      <img src="img/annual/ctf.jpg">
+    </div>
+
+
+    <div class="eight columns panel">
+      <img src="img/annual/fo.jpg">
+    </div>
+
+    <div class="four columns panel">
+      <h3>Family Olympiad</h3>
+      <p>AAA Families are groups of AAA members to foster strong membership, and in family olympiad, they will compete in a series of relay races and challenging activities to promote bondings and foster strong relationships.</p>
+    </div>
+
+
+    <div class="four columns panel">
+      <h3>Semiformal</h3>
+      <p>Semiformal is an AAA social event that takes place first semester to commemorate accomplishments and socialize with members to strengthen relationships.</p>
+    </div>
+
+    <div class="eight columns panel">
+      <img src="img/annual/semi.jpg">
+    </div>
+
+
+    <div class="eight columns panel">
+      <a href="/fs"><img src="img/annual/fs.jpg"></a>
+    </div>
+
+    <div class="four columns panel">
+      <h3>Fashion Show</h3>
+      <p>The annual modern and cultural dance performance that promotes AAA, Asians, and Asian American culture and identity that welcomes AAA Alumni to come and watch.</p>
+    </div>
+
+
+    <div class="four columns panel">
+      <h3>MAASU</h3>
+      <p>A spring conference organized by the Midwest Asian American Students Union that unites people who are interested in Asian American culture in the Midwest area.</p>
+    </div>
+
+    <div class="eight columns panel">
+      <img src="img/annual/maasu.jpg">
+    </div>
+
+
+    <div class="eight columns panel">
+      <img src="img/annual/palo.jpg">
+    </div>
+
+    <div class="four columns panel">
+      <h3>AAA Palooza</h3>
+      <p>An event showcases a large variety of Asian American talent and culture from students both within and outside the APAC at UIUC. </p>
+    </div>
+
+
+    <div class="four columns panel">
+      <h3>Study Nights</h3>
+      <p>Study Nights are frequent casual events hosted by AAA to create a synergistic study atmosphere for students to not only mutually work together but also to socialize and alleviate stress.</p>
+    </div>
+
+    <div class="eight columns panel">
+      <img src="img/annual/study.jpg">
+    </div>
+
+
+    <div class="eight columns panel">
+      <img src="img/annual/toa.jpg">
+    </div>
+
+    <div class="four columns panel">
+      <h3>Taste Of Asia</h3>
+      <p>An event, hosted by AAA, that gathers other APAC organizations to share their cultures’ respective dishes in a giant potluck to advocate cultural awareness.</p>
+    </div>
+
+
+    <div class="four columns panel">
+      <h3>Formal</h3>
+      <p>The finale event in which members formally gather to reflect and commemorate the year and happily rejoice with the friendships and familial bondings that were made.</p>
+    </div>
+
+    <div class="eight columns panel">
+      <img src="img/annual/formal.jpg">
+    </div>
+
+  </div>
+
+</section>
+
+<script type="text/javascript">
+  $('.pastevents').hide();
+  $('#expandcollapse').append('(Click to Expand)');
+  var disp = false;
+  $('#past').click(function(){
+    if(!disp){
+      $('.pastevents').show("blind", 1000);
+      disp = !disp;
+      $('#expandcollapse').empty();
+      $('#expandcollapse').append('(Click to Collapse)');
+    }
+    else{
+      $('.pastevents').hide("blind", 1000);
+      disp = !disp;
+      $('#expandcollapse').empty();
+      $('#expandcollapse').append('(Click to Expand)');
+    }
+  });
+</script>

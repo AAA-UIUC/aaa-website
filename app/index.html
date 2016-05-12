@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/foundation.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="styles/slicknav.css"/>
+    <link rel="stylesheet" href="bower_components/pikaday/css/pikaday.css"/>
+    <!-- endbuild -->
+  </head>
+  <body ng-app="aaaApp" ng-controller="MainCtrl as main">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav>
+      <div style="position:fixed" class="twelve columns header_nav">
+        <div class="row">
+          <ul id="menu-header" class="nav-bar horizontal">
+            <li ng-class="{ active: main.isActive('/')}"><a ng-href="/home">Home</a></li>
+            <li ng-class="{ active: main.isActive('/about')}"><a ng-href="/about">About</a></li>
+            <li ng-class="{ active: main.isActive('/board')}"><a ng-href="/board">The Board</a></li>
+            <li ng-class="{ active: main.isActive('/events')}"><a ng-href="/events">Events</a></li>
+            <li ng-class="{ active: main.isActive('/fs')}"><a ng-href="/fs">Fashion Show</a></li>
+            <li ng-class="{ active: main.isActive('/contact')}"><a ng-href="/contact">Contact Us</a></li>
+            <li><a ng-href="http://www.uiucapac.com/affiliates.html" target="_blank">Affiliates</a></li>
+
+            <span id="flagset">
+              <a ng-href="https://www.facebook.com/groups/2200258601/" target="new"><img src="img/nav_bar_flags/fb.png"/></a>
+              <a ng-href="https://twitter.com/AAA_UIUC" target="new"><img src="img/nav_bar_flags/tw.png"/></a>
+              <a ng-href="http://aaa-uiuc.tumblr.com/" target="new"><img src="img/nav_bar_flags/tr.png"/></a>
+              <a ng-href="http://www.youtube.com/user/AAAUIUCYT/" target="new"><img src="img/nav_bar_flags/yt.png"/></a>
+              <a ng-href="http://instagram.com/aaa_uiuc" target="new"><img src="img/nav_bar_flags/in.png"/></a>
+              <a ng-href="http://aaalovestonap.tumblr.com/" target="new"><img src="img/nav_bar_flags/zz.png"/></a>
+            </span>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav>
+      <h3 id="title">AAA UIUC</h3>
+      <ul id="menu">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/board">The Board</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/fs">Fashion Show</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="http://www.uiucapac.com/affiliates.html" target="_blank">Affiliates</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+    <div ng-view=""></div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <!-- First Column -->
+        <div class="three column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><span style="color:#2ba6cb">Email: aaa.uiuc@gmail.com</span></li>
+            <li><span style="color:#2ba6cb">Illini Union 280<br>Office 256</span></li>
+          </ul>
+        </div>
+
+        <!-- Second Column -->
+        <div class="three column">
+          <h3>Join Our Email List!</h3>
+          <form action="//aaauiuc.us6.list-manage.com/subscribe/post?u=d867fc5c62ce793a3af012a4a&amp;id=e32367e809" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required placeholder="Enter Email Here"/>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_d867fc5c62ce793a3af012a4a_e32367e809" tabindex="-1" value=""></div>
+                </label>
+              </div>
+              <input type="submit" value="Subscribe" name="subscribe" id="submit-button" class="button">
+              <!-- <a class="button expand" id="submit-button">Submit</a> -->
+            </div>
+          </form>
+        </div>
+
+        <!-- Third Column -->
+        <div class="four column">
+          <h3>Socialize</h3>
+          <a href="https://www.facebook.com/groups/2200258601/" target="new"><img src="img/footer_icons/fb.png"/></a>
+          <a href="https://twitter.com/AAA_UIUC" target="new"><img src="img/footer_icons/twitter.png"/></a>
+          <a href="http://aaa-uiuc.tumblr.com/" target="new"><img src="img/footer_icons/tumblr.png"/></a>
+          <a href="http://www.youtube.com/user/AAAUIUCYT/" target="new"><img src="img/footer_icons/youtube.png"/></a>
+          <a href="http://instagram.com/aaa_uiuc" target="new"><img src="img/footer_icons/instagram.png"/></a>
+        </div>
+
+        <!-- Fourth Column -->
+        <div class="two column">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/board">The Board</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/fs">Fashion Show</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="http://www.uiucapac.com/affiliates.html" target="_blank">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/foundation-datepicker/js/foundation-datepicker.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/pikaday/pikaday.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/home.js"></script>
+        <script src="scripts/controllers/board.js"></script>
+        <script src="scripts/controllers/events.js"></script>
+        <script src="scripts/controllers/fs.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/create.js"></script>
+        <script src="scripts/controllers/admin.js"></script>
+        <script src="scripts/controllers/editevent.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/services/authService.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
+
+    <script src="scripts/jquery.bgswitcher.js"></script>
+    <script src="scripts/skrollr.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="scripts/jquery.slicknav.min.js"></script>
+    <script src="scripts/cryptojs/core-min.js"></script>
+    <script src="scripts/cryptojs/enc-utf16-min.js"></script>
+    <script src="scripts/cryptojs/sha1-min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+[
+  {
+    "name":"AAA Barbecue",
+    "date":"August 29th",
+    "image":"./images/events/AAA BBQ.png",
+    "link":"https://www.facebook.com/events/958693994192661/",
+    "form":"",
+    "upcoming":true
+  },
+  {
+    "name":"First General Meeting",
+    "date":"September 1st",
+    "image":"./images/events/firstgen.jpg",
+    "link":"https://www.facebook.com/events/1702802756614238/",
+    "form":"",
+    "upcoming":true
+  }
+
+]

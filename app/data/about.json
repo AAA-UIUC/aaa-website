@@ -1,0 +1,36 @@
+{
+  "picture":"./img/boardpic.jpg",
+  "description":"Our goal for the 2014-2015 year is to create a more member-focused environment that encourages higher retention and establish lasting relationships with APAC and non-APAC organizations while exploring APA issues.",
+  "goals":[
+    {
+      "name":"Service",
+      "description":"To serve and promote the needs of Asian Americans at the University of Illinois at Urbana-Champaign as well as within the local community.",
+      "icon":"./img/about_icons/service.png"
+    },
+    {
+      "name":"Educate",
+      "description":"To educate the university and community on current Asian American issues as well as prejudices and stereotypes that people may harbor upon Asian Americans.",
+      "icon":"./img/about_icons/educate.png"
+    },
+    {
+      "name":"Program",
+      "description":"To promote awareness of Asian American heritage to the university and community through programming on Asian American history and culture.",
+      "icon":"./img/about_icons/program.png"
+    },
+    {
+      "name":"Socialize",
+      "description":"To provide social activities and opportunities for Asian American Association members as well as nonmembers to build strong relationships and families.",
+      "icon":"./img/about_icons/socialize.png"
+    },
+    {
+      "name":"Collaborate",
+      "description":"To support and work in coalition with other organizations who are willing to support and contribute to the protection and services of Asian American community.",
+      "icon":"./img/about_icons/collaborate.png"
+    },
+    {
+      "name":"Network",
+      "description":"To network and maintain connections with Asian American Association's alumni to facilitate and strengthen the legacy of the organization.",
+      "icon":"./img/about_icons/network.png"
+    }
+  ]
+}

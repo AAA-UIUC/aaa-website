@@ -1,0 +1,26 @@
+<div style="height:100px"></div>
+<div style="height:150px"></div>
+<div class="row">
+  <div class="columns four"></div>
+  <div class="columns four">
+    <div class="panel">
+      <h1>Login</h1>
+      <form>
+        <div>
+          <label>
+            <input type="text" placeholder="Username" ng-model="login.loginData.username"/>
+          </label>
+          <label>
+            <input type="password" placeholder="Password" ng-model="login.loginData.password"/>
+          </label>
+        </div>
+        <div ng-if="login.error">
+          <p style="color:#f00">{{login.error}}</p>
+        </div>
+        <button type="submit" class="button" ng-click="login.doLogin()">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="columns four"></div>
+</div>
+<div style="height:150px"></div>

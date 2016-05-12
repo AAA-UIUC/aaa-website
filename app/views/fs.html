@@ -1,0 +1,239 @@
+<header>
+  <div id="header-logo" data-0="opacity:1;" data-400="opacity:0;">
+    <div style="height:325px;"></div>
+    <img src="./img/down_arrow.png" width="200">
+  </div>
+
+  <style type="text/css">
+    @media only screen and (min-width: 40em){
+      #header-logo {position:fixed}
+    }
+    @media only screen and (max-width: 40em){
+      #header-logo {position: relative;}
+    }
+  </style>
+</header>
+
+<section class="section_fs">
+
+  <div class="row">
+    <div class="column twelve">
+      <h1>Fashion Show</h1>
+    </div>
+  </div>
+
+  <div class="row" style="text-align:center">
+    <div class="column twelve">
+      <div class="videoWrapper">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/7y4l7BQqdvQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      margin: 20px 0;
+    }
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <div class="row">
+    <div class="column twelve">
+      <h2>{{ fs.fs.fs_description }}</h2>
+    </div>
+  </div>
+
+  <div class="row fsd" style="padding: 20px 30px">
+    <div class="column twelve">
+      <div class="six column">
+        <a href="mailto:fs.headcoord@gmail.com" target="new">
+          <div class="row">
+            <div class="one column"></div>
+            <div class="three columns">
+              <img src="img/contact/email4.png" width="100">
+            </div>
+            <div class="six columns swag" style="margin-top:15px">
+              <h3>{{ fs.fs.fs_email }}</h3>
+            </div>
+            <div class="two column"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="six column">
+        <a href="{{fs.fs.fs_facebook_group}}" target="new">
+          <div class="row">
+            <div class="three columns">
+              <img src="img/contact/facebook2.png">
+            </div>
+            <div class="eight columns swag" style="margin-top:15px">
+              <h3>Join Our Facebook Group!</h3>
+            </div>
+            <div class="one column"></div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div class="row">
+    <div class="twelve columns">
+
+      <a href="mailto:fs.headcoord@gmail.com" target="new">
+      <div class="contact-info-mobile cims" style="padding-bottom: 15px;">
+        <img src="img/contact/email4.png" style="margin-left: 5px;">
+        <h3>{{ fs.fs.fs_email }}</h3>
+      </div>
+      </a>
+
+      <a href="{{fs.fs.fs_facebook_group}}">
+      <div class="contact-info-mobile cims" style="padding-bottom:15px;">
+        <img src="img/contact/facebook2.png" style="margin-left: 5px;">
+        <h3>Join Our Facebook Group!</h3>
+      </div>
+      </a>
+
+    </div>
+  </div>
+  <!-- end Mobile -->
+
+  <style type="text/css">
+    .fs-all {width: 1400px; margin-bottom: 25px;}
+  </style>
+
+  <div style="height:50px"></div>
+
+  <div class="row">
+    <div class="four columns panel">
+      <h4>{{ fs.fs.head_coords[0].name }} (Head Coord)</h4>
+      <h5>{{ fs.fs.head_coords[0].email }}</h5>
+      <img ng-src="{{fs.fs.head_coords[0].picture}}">
+    </div>
+    <div class="four columns panel">
+      <h4>{{ fs.fs.head_coords[1].name }} (Head Coord)</h4>
+      <h5>{{ fs.fs.head_coords[1].email }}</h5>
+      <img ng-src="{{fs.fs.head_coords[1].picture}}">
+    </div>
+    <div class="four columns panel">
+      <h4>{{ fs.fs.interns[0].name }} (Intern)</h4>
+      <h5>{{ fs.fs.interns[0].email }}</h5>
+      <img ng-src="{{fs.fs.interns[0].picture}}">
+    </div>
+  </div>
+
+</section>
+
+<!-- ######## repeat yo ############# -->
+
+<section ng-repeat="scene in fs.fs.scenes">
+  <div id="culturalpic" style="background:url({{scene.image}}) fixed no-repeat; background-size: cover; height: 450px"></div>
+
+  <section class="section_fs">
+
+    <div class="row">
+      <div class="column twelve">
+        <h1>{{ scene.name }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column twelve">
+        <h2>{{ scene.description }}</h2>
+      </div>
+    </div>
+
+    <div class="row fsd" style="padding: 20px 30px">
+
+      <div class="columns three"></div>
+
+     <!--  <div class="six column">
+        <a href="{{scene.email}}" target="new">
+          <div class="row">
+            <div class="one column"></div>
+            <div class="three columns">
+              <img src="img/contact/email4.png">
+            </div>
+            <div class="six columns swag" style="margin-top:15px">
+              <h3>{{scene.email}}</h3>
+            </div>
+            <div class="two column"></div>
+          </div>
+        </a>
+      </div> -->
+
+      <div class="six column">
+        <a href="{{scene.facebook_group}}" target="new">
+          <div class="row">
+            <div class="three columns">
+              <img src="img/contact/facebook2.png">
+            </div>
+            <div class="seven columns swag" style="margin-top:15px">
+              <h3>Join Our Facebook Group!</h3>
+            </div>
+            <div class="two column"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="columns three"></div>
+
+    </div>
+
+    <!-- Mobile -->
+    <div class="row">
+      <div class="twelve columns">
+        <a href="mailto:{{scene.email}}" target="new">
+        <div class="contact-info-mobile cims" style="padding-bottom: 15px;">
+          <img src="img/contact/email4.png" style="margin-left: 5px;">
+          <h3>{{scene.email}}</h3>
+        </div>
+        </a>
+        <a href="{{scene.facebook_group}}">
+        <div class="contact-info-mobile cims" style="padding-bottom:15px;">
+          <img src="img/contact/facebook2.png" style="margin-left: 5px;">
+          <h3>Join Our Facebook Group!</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!-- end Mobile -->
+
+    <div class="row">
+      <div class="column twelve">
+        <h3>Scene Coordinators:</h3>
+      </div>
+    </div>
+
+    <div ng-show="scene.twoCoords" class="row">
+      <div class="columns two"></div>
+      <div ng-repeat="coord in scene.coords" class="columns four panel">
+        <h4>{{ coord.name }}</h4>
+        <h5>{{ coord.email }}</h5>
+        <img ng-src="{{ coord.picture }}">
+      </div>
+      <div class="columns two"></div>
+    </div>
+
+    <div ng-show="!scene.twoCoords" class="row">
+      <div ng-repeat="coord in scene.coords" class="columns four panel">
+        <h4>{{ coord.name }}</h4>
+        <h5>{{ coord.email }}</h5>
+        <img ng-src="{{ coord.picture }}">
+      </div>
+    </div>
+
+  </section>
+
+</section>

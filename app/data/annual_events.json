@@ -1,0 +1,52 @@
+[
+  {
+    "name":"Asiantation",
+    "description":"An event organized by Asian Pacific American Coalition (APAC) that offers new incoming students an opportunities to get involved in Asian Culture.",
+    "image":"./img/annual/asiantation.jpg"
+  },
+  {
+    "name":"Capture The Flag",
+    "description":"Capture the Flag is a tournament hosted by the various APAC organizations to compete in a vigorous sports competition to strengthen bonds and invigorate team and organization spirit.",
+    "image":"./img/annual/ctf.jpg"
+  },
+  {
+    "name":"Family Olympiad",
+    "description":"AAA Families are groups of AAA members to foster strong membership, and in family olympiad, they will compete in a series of relay races and challenging activities to promote bondings and foster strong relationships.",
+    "image":"./img/annual/fo.jpg"
+  },
+  {
+    "name":"Semiformal",
+    "description":"Semiformal is an AAA social event that takes place first semester to commemorate accomplishments and socialize with members to strengthen relationships.",
+    "image":"./img/annual/semi.jpg"
+  },
+  {
+    "name":"Fashion Show",
+    "description":"The annual modern and cultural dance performance that promotes AAA, Asians, and Asian American culture and identity that welcomes AAA Alumni to come and watch.",
+    "image":"./img/annual/fs.jpg"
+  },
+  {
+    "name":"MAASU",
+    "description":"A spring conference organized by the Midwest Asian American Students Union that unites people who are interested in Asian American culture in the Midwest area.",
+    "image":"./img/annual/maasu.jpg"
+  },
+  {
+    "name":"AAA Palooza",
+    "description":"An event showcases a large variety of Asian American talent and culture from students both within and outside the APAC at UIUC.",
+    "image":"./img/annual/palo.jpg"
+  },
+  {
+    "name":"Study Nights",
+    "description":"Study Nights are frequent casual events hosted by AAA to create a synergistic study atmosphere for students to not only mutually work together but also to socialize and alleviate stress.",
+    "image":"./img/annual/study.jpg"
+  },
+  {
+    "name":"Taste Of Asia",
+    "description":"An event hosted by AAA that gathers other APAC organizations to share their cultures’ respective dishes in a giant potluck to advocate cultural awareness.",
+    "image":"./img/annual/toa.jpg"
+  },
+  {
+    "name":"Formal",
+    "description":"The finale event in which members formally gather to reflect and commemorate the year and happily rejoice with the friendships and familial bondings that were made.",
+    "image":"./img/annual/formal.jpg"
+  }
+]

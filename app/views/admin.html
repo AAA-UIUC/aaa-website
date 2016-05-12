@@ -1,0 +1,56 @@
+<div style="height:80px"></div>
+
+  <div class="row">
+    <div class="columns three">
+      <button class="button" style="margin-top:30px;float:left" ng-click="admin.logout()">Logout</button>
+    </div>
+    <div class="columns six">
+      <h1 style="text-align:center;padding:20px">Upcoming Events</h1>
+    </div>
+    <div class="columns three">
+      <a href="/create"><button class="button" style="margin-top:30px;float:right">Create Event</button></a>
+    </div>
+  </div>
+  <div class="row">
+    <div ng-repeat="event in admin.events | orderBy:'date'" ng-if="event.upcoming">
+      <div class="six columns">
+        <div class="panel">
+          <h3>{{ event.displayDate }} - {{ event.name }}
+            <span ng-class="admin.hasForm(event) ? '' : 'hide' ">
+               - <a href="{{event.form}}">Sign Up!</a>
+            </span>
+          </h3>
+          <a href="{{event.link}}">
+            <img ng-src="{{event.image}}">
+          </a>
+          <a href="/edit/{{event._id}}"><button class="button" style="margin-top:20px">Edit This Event</button></a>
+          <button class="button" style="margin-top:20px" ng-click="admin.deleteEvent(event._id)">Delete This Event</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ######################## Past Events ######################## -->
+
+  <div id="past">
+    <h1 style="text-align:center; padding:0; margin-bottom:30px">Past Events</h1>
+    <h1 id="expandcollapse" style="text-align:center; font-size:2em; padding:0 0 auto 0; margin:0"></h1>
+  </div>
+
+  <div class="pastevents">
+
+  <div class="row">
+    <div ng-repeat="event in admin.events | orderBy:'-date'" ng-if="!event.upcoming">
+      <div class="six columns">
+        <div class="panel">
+          <h3>{{ event.displayDate }} - {{ event.name }}</h3>
+          <a href="{{event.link}}">
+            <img ng-src="{{event.image}}">
+          </a>
+          <a href="/edit/{{event._id}}"><button class="button" style="margin-top:20px">Edit This Event</button></a>
+          <button class="button" style="margin-top:20px" ng-click="admin.deleteEvent(event._id)">Delete This Event</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

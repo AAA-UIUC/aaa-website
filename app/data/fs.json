@@ -1,0 +1,146 @@
+{
+  "main_description":"The annual AAA Fashion Show strives to promote the mission statement of the organization through a year long production. It’s an opportunity for students of all backgrounds to come together and experience something unforgettable through the medium of dance. This year, our theme seeks to explore fundamental social issues that motivate discussion not only in the APA communities, but in communities globally. The show will provide a story that speaks to people from all walks of life. The show will consist of five different scenes, each uniquely designed to explore a different issue and engage those involved in an unforgettable way.",
+  "fs_email":"fs.headcoord@gmail.com",
+  "fs_facebook_group":"https://www.facebook.com/groups/1701624170069608/",
+  "head_coords":[
+    {
+      "name":"Alvin Wu",
+      "email":"alvinwu2@illinois.edu",
+      "picture":"./img/board_1516/alvin.jpg"
+    },
+    {
+      "name":"Jeff Lin",
+      "email":"jlin56@illinois.edu",
+      "picture":"./img/board_1516/jeff.png"
+    }
+  ],
+  "interns":[
+    {
+      "name":"Amanda Wang",
+      "email":"awang47@illinois.edu",
+      "picture":"./img/board_1516/amanda.png"
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    }
+  ],
+  "scenes":[
+    {
+      "name":"Bizcaz Scene",
+      "image":"./img/fs/broadway.jpg",
+      "description":"Business Casual Scene is a bit different than the other scenes. Our scene isn't really tied to or associated with any specific genre of dance, but it is mostly filled with the upbeat fun hip-hop feels.",
+      "email":"",
+      "facebook_group":"https://www.facebook.com/groups/809290179188162/",
+      "coords":[
+        {
+          "name":"Alice Jia",
+          "email":"ajia3@illinois.edu",
+          "picture":"./img/fs_coords_1516/alice.png"
+        },
+        {
+          "name":"Christine Kao",
+          "email":"xtinekao@gmail.com",
+          "picture":"./img/fs_coords_1516/christine.png"
+        },
+        {
+          "name":"Tyler Pradaxy",
+          "email":"tpradaxay@gmail.com",
+          "picture":"./img/fs_coords_1516/tyler.png"
+        }
+      ]
+    },
+    {
+      "name":"Cultural Scene",
+      "image":"./img/fs/cultural.jpg",
+      "description":"Get in touch with your cultural side in this diverse scene. Interested in learning dances from all over Asia, then look no further! Here you will immerse yourself in something different and, in the process, appreciate the different methods of expression these cultures have. Make new friends and learn something new together!",
+      "email":"",
+      "facebook_group":"https://www.facebook.com/groups/cultural16/",
+      "coords":[
+        {
+          "name":"Ian Chou",
+          "email":"ianchou2@illinois.edu",
+          "picture":"./img/fs_coords_1516/ian.png"
+        },
+        {
+          "name":"Maggie An",
+          "email":"maggiean@gmail.com",
+          "picture":"./img/fs_coords_1516/maggie.png"
+        },
+        {
+          "name":"Sam Fu",
+          "email":"ssfu2@illiois.edu",
+          "picture":"./img/fs_coords_1516/sam.png"
+        }
+      ]
+    },
+    {
+      "name":"Formal Scene",
+      "image":"./img/fs/formal.jpg",
+      "description":"Step out of your comfort zone! Formal scene's partner dances will encourage you to get comfortable with moving your body in sync with your partner. Put your best smile on as you work together to learn to the sexy tango, energetic swing, and much more!",
+      "email":"",
+      "facebook_group":"https://www.facebook.com/groups/170686929932124/",
+      "coords":[
+        {
+          "name":"Annie Kim",
+          "email":"akim96@illinois.edu",
+          "picture":"./img/fs_coords_1516/annie.png"
+        },
+        {
+          "name":"Helen Fan",
+          "email":"hafan2004@yahoo.com",
+          "picture":"./img/fs_coords_1516/halan.png"
+        }
+      ]
+    },
+    {
+      "name":"Modern Scene",
+      "image":"./img/fs/modern.jpg",
+      "description":"Feeling expressive? Modern scene is designed to get you in touch with your emotions and the dancer we all have hidden inside! Get ready to touch the audience with a dramatic mix of lyrical hiphop and contemporary choreography!",
+      "email":"",
+      "facebook_group":"https://www.facebook.com/groups/515097631992840/",
+      "coords":[
+        {
+          "name":"Erica Yu",
+          "email":"ericayu2@illinois.edu",
+          "picture":"./img/fs_coords_1516/erica.png"
+        },
+        {
+          "name":"Tiffany Tsoi",
+          "email":"ttsoi2@illinois.edu",
+          "picture":"./img/fs_coords_1516/tiffany.png"
+        },
+        {
+          "name":"Tony Shin",
+          "email":"shintony@gmail.com",
+          "picture":"./img/fs_coords_1516/tony.png"
+        }
+      ]
+    },
+    {
+      "name":"Nightlife Scene",
+      "image":"./img/fs/nightlife.jpg",
+      "description":"Tap in to the world of hip-hop through a unique and engaging way! Here you will get a taste of the various styles of street dancing applied to your favorite songs. Throw yourself out there and learn to move your body to the hard-hitting, but sometimes smooth, choreography we have planned for you this year.",
+      "email":"",
+      "facebook_group":"https://www.facebook.com/groups/1639364636280870/",
+      "coords":[
+        {
+          "name":"Andrew Liang",
+          "email":"aliang6@illinois.edu",
+          "picture":"./img/fs_coords_1516/andy.png"
+        },
+        {
+          "name":"Eva Shih",
+          "email":"evashih94@gmail.com",
+          "picture":"./img/fs_coords_1516/eva.png"
+        },
+        {
+          "name":"Peter Lam",
+          "email":"peterdlam2@gmail.com",
+          "picture":"./img/fs_coords_1516/peter.png"
+        }
+      ]
+    }
+  ]
+}

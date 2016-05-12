@@ -1,0 +1,38 @@
+<header>
+  <div id="header-logo" data-0="opacity:.8;" data-400="opacity:0;">
+      <img src="img/aaa.png" width="1000">
+  </div>
+  <style type="text/css">
+      @media only screen and (min-width: 40em){
+        #header-logo {position:fixed}
+      }
+      @media only screen and (max-width: 40em){
+        #header-logo {position: relative;}
+      }
+  </style>
+</header>
+
+<section class="section_home">
+  <div class="row">
+    <div class="column twelve">
+      <h1>Upcoming Events</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div ng-repeat="event in home.events | orderBy:'date'" ng-if="event.upcoming">
+      <div class="six columns">
+        <div class="panel">
+          <h3>{{ event.displayDate }} - {{ event.name }}
+            <span ng-class="home.hasForm(event) ? '' : 'hide' ">
+               - <a href="{{event.form}}">Sign Up!</a>
+            </span>
+          </h3>
+          <a href="{{event.link}}">
+            <img ng-src="{{event.image}}">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

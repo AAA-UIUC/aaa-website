@@ -1,0 +1,157 @@
+{
+  "officers":[
+    {
+      "position":"Academic/Alumni",
+      "description":"Keeps records and photos of events and activities throughout the year. Network with Asian American Association Alumni to create a resource for current AAA members",
+      "name1":"Alice Yang",
+      "email1":"axyang2@illinois.edu",
+      "picture1":"./img/board_1516/alice.jpg",
+      "name2":"Helen Cao",
+      "email2":"helenc23@gmail.com",
+      "picture2":"./img/board_1516/helen.png"
+    },
+    {
+      "position":"Big Sib/Lil' Sib",
+      "description":"Pair up upperclassmen with underclassmen to help adjust transition to campus life and the APA community, as well as organize “siblings” together into “families”, and provide opportunities for Big Sib/Lil’ Sib pairs to develop a strong friendship with one another and their families",
+      "name1":"Eddy Wong",
+      "email1":"ewong20@illinois.edu",
+      "picture1":"./img/board_1516/eddy.png",
+      "name2":"Megan Chang",
+      "email2":"mschang3@illinois.edu",
+      "picture2":"./img/board_1516/megan.png"
+    },
+    {
+      "position":"Cultural Awareness",
+      "description":"Create and coordinate programs and events to educate the members and the community about Asian heritage",
+      "name1":"Elena Zheng",
+      "email1":"szheng21@illinois.edu",
+      "picture1":"./img/board_1516/elena.png",
+      "name2":"Jasper Ting",
+      "email2":"jasperting0@gmail.com",
+      "picture2":"./img/board_1516/jasper.png"
+    },
+    {
+      "position":"Fashion Show Head Coordinators",
+      "description":"To organize and plan a show that promotes AAA, Asian, and Asian American culture and identity",
+      "name1":"Alvin Wu",
+      "email1":"alvinwu2@illinois.edu",
+      "picture1":"./img/board_1516/alvin.jpg",
+      "name2":"Jeff Lin",
+      "email2":"jlin56@illinois.edu",
+      "picture2":"./img/board_1516/jeff.png"
+    },
+    {
+      "position":"Fundraising",
+      "description":"Coordinate with other committees to raise funds to help create a financial foundation for events conducted by AAA",
+      "name1":"Brian Mao",
+      "email1":"bmao2@illinois.edu",
+      "picture1":"./img/board_1516/brian.png",
+      "name2":"Steven Janczy",
+      "email2":"stevenjanczy@gmail.com",
+      "picture2":"./img/board_1516/steven.jpg"
+    },
+    {
+      "position":"Outreach",
+      "description":"Reach out to the rest of the APA, LGBT, Black, Hispanic and other non-APA communities, through collaborative efforts. Work with other committees such as Social and Sports to draw participation from non-APA communities",
+      "name1":"Alex Wu",
+      "email1":"alexwu2@illinois.edu",
+      "picture1":"./img/board_1516/alex.jpg",
+      "name2":"David Fu",
+      "email2":"dfu.lfhs@gmail.com",
+      "picture2":"./img/board_1516/david.png"
+    },
+    {
+      "position":"Philanthropy",
+      "description":"Organize volunteer projects that focus on the Champaign-Urbana community",
+      "name1":"Jon Ko",
+      "email1":"jyko2@illinois.edu",
+      "picture1":"./img/board_1516/jon.png",
+      "name2":"Stephanie Guan",
+      "email2":"sguan6@illinois.edu",
+      "picture2":"./img/board_1516/stephanie.jpg"
+    },
+    {
+      "position":"Public Relations",
+      "description":"Actively publicize and promote AAA and AAA’s events through various forms of media",
+      "name1":"Ben Cheng",
+      "email1":"bcheng6@illinois.edu",
+      "picture1":"./img/board_1516/ben.png",
+      "name2":"Amanda Wang",
+      "email2":"awang47@illinois.edu",
+      "picture2":"./img/board_1516/amanda.png"
+    },
+    {
+      "position":"Social",
+      "description":"Plan and organize activities to provide a social atmosphere for AAA",
+      "name1":"Hyun Park",
+      "email1":"hpark113@illinois.edu",
+      "picture1":"./img/board_1516/hyun.png",
+      "name2":"Jason Okubo",
+      "email2":"jasonokubo@yahoo.com",
+      "picture2":"./img/board_1516/jason.png"
+    },
+    {
+      "position":"Sports",
+      "description":"Organize events, tournaments, intramural teams, and spectator events",
+      "name1":"Derek Mei",
+      "email1":"dmei9@illinois.edu",
+      "picture1":"./img/board_1516/derek.png",
+      "name2":"Steven Qiou",
+      "email2":"sqiou2@illinois.edu",
+      "picture2":"./img/board_1516/stevenq.png"
+    }
+  ],
+  "display_shadows": false,
+  "shadows":[
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    },
+    {
+      "name":"",
+      "email":"",
+      "picture":""
+    }
+  ]
+}
