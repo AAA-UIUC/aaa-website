@@ -43,10 +43,10 @@ angular.module('aaaApp')
 
     function setBackground() {
       if ($(".header_nav").css("display") != "none") {
-        $('header').css({"background":"url('img/boardbbq2.jpg') fixed no-repeat","background-size":"cover"});
+        $('header').css({"background":"url('img/boardpic.jpg') fixed no-repeat","background-size":"cover"});
       }
       else {
-        $('header').css({"height":"195px","background":"url('img/boardbbq2.jpg') no-repeat","background-size":"365px"});
+        $('header').css({"height":"195px","background":"url('img/boardpic.jpg') no-repeat","background-size":"365px"});
       }
     }
 
